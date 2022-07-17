@@ -14,7 +14,8 @@ public:
         {
             for(int j=0;j<c;j++)
             {
-                new_mat[i][j] = mat[x][y++];
+                new_mat[i][j] = mat[x][y];
+                y++;
                 if(y==mat[0].size())
                 {
                     y=y%mat[0].size();
